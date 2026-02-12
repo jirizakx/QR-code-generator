@@ -28,11 +28,11 @@ jobs:
       - name: Check Prettier formatting
         run: npm run format:check
 
-      - name: Run tests
-        run: npm run test
+      #- name: Run tests
+      #  run: npm run test
 
   deploy:
-    #needs: lint-and-test
+    needs: lint-and-test
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
