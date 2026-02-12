@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../views'));
 
 router.get('/', (_req, res) => {
-  res.render('index', { title: 'Hello Jirka' });
+  res.render('index', { title: 'Hello lol' });
 });
 
 app.use('/qr', router);
