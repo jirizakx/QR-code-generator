@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= title %></title>
+  <title>QR code generator</title>
 </head>
 <body>
-  <h1><%= title %></h1>
+  <h1>QR code generator</h1>
+  <form id="generate-form">
+    <label for="user-input">Enter URL:</label>
+    <input type="text" name="user-input">
+    <button type="submit">Generate QR code</button>
+  </form>
+  <div>IMG: <%= img %></div>
 </body>
 </html>
